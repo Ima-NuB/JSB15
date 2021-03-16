@@ -1,0 +1,28 @@
+body {
+    font-family: 'Pangolin', cursive;
+}
+
+div {
+    background-image: url('inv.jpg');
+    background-repeat: no-repeat;
+    height: 5000px;
+    text-align: center;
+    color: #DFFF19;
+}
+
+h1 {
+    padding-top: 100px;
+    font-size: 50px;
+
+}
+
+hr {
+    width: 100px;
+    color: #DFFF19;
+    margin-top: 50px;
+}
+
+h2 {
+    padding-bottom: 30px;
+}
+
