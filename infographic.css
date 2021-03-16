@@ -1,0 +1,45 @@
+body {
+    font-family: 'angolin', cursive;
+    background-color: grey;
+}
+
+div {
+    background-color: white;
+    padding-left: 30px;
+    width: 300px;
+    border: solid 1px;
+    border-radius: 15px;
+}
+
+h1 {
+    color: #FF665C;
+    font-size: 50x;
+    margin-top: 0x;
+    margin-bottom: 18.72x;
+}
+
+span {
+    font-size: 16px;
+}
+
+p {
+    color: grey;
+}
+
+ul {
+    color: grey;
+}
+
+button {
+    padding: 20px;
+    width: 270px;
+    border-radius: 13px;
+    border: none;
+    background-color: rgb(0, 81, 255);
+    color: white;
+    text-align: left;
+    height: 50px;
+    font-size: 15px;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
