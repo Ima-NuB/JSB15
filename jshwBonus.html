@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Bai 1:
+        var a = prompt('gimme any number you want'), a1 = parseInt(a);
+        var count = 0;
+
+        while(a1>=10){
+            a1=a1/10;
+            count++;
+            if(a1<10){
+                alert('the number you gave me has '+ (count+1) +' digits')
+                break;
+            }
+        }
+        
+
+        //Bai 2:
+        
+        // var a = prompt('ax + b = 0, insert a:');
+        // var b = prompt('insert b:');
+        // var x = (0 - b)/a;
+        // alert('x = '+ x)
+    </script>
+</body>
+</html>
