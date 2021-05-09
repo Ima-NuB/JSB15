@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>BMI CALCULATOR</h1>
+
+    <h3>Height (metres)</h3>
+    <input id='h'>
+
+    <h3>Mass (kilograms)</h3>
+    <input id='m'>
+
+    <h3 id='displayBMI' style='display: none;'>Your BMI is: <span id='insertBMI'></span> </h3>
+    <h3 id='bodyCondition' style='display: none;'> </h3>
+    <button style='display: block; margin-top: 18.720px;' onclick='bmiCalculator()'>Calculate</button>
+
+<script>
+
+    function bmiCalculator(){
+        var h = document.getElementById('h').value
+        var m = document.getElementById('m').value
+        var bmi = m / (h*h)
+        // alert(bmi)
+        document.getElementById('displayBMI').style='display: block'
+        document.getElementById('insertBMI').innerHTML=bmi.toFixed(1)
+        if(bmi<18.5){
+            document.getElementById('bodyCondition').style='display: block'
+            document.getElementById('bodyCondition').innerHTML='Underweight'
+        }
+        else if(bmi >= 18.5 && bmi<=24.9){
+            document.getElementById('bodyCondition').style='display: block'
+            document.getElementById('bodyCondition').innerHTML='Normal and healthy'
+        }
+        else if(bmi>=25 && bmi<=29.9){
+            document.getElementById('bodyCondition').style='display: block'
+            document.getElementById('bodyCondition').innerHTML='Overweight'
+        }
+        else if(bmi>=30 && bmi<=39.9){
+            document.getElementById('bodyCondition').style='display: block'
+            document.getElementById('bodyCondition').innerHTML='Obese'
+        }
+        else{
+            document.getElementById('bodyCondition').style='display: block'
+            document.getElementById('bodyCondition').innerHTML='U fckn fat guy :) '
+        }
+    }
+
+</script>
+
+</body>
+</html>
