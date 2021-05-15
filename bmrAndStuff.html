@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW</title>
+</head>
+<body>
+    <h1>BMR CALCULATOR</h1>
+    <p id='shortcut'>BMR: <b>B</b>asal <b>M</b>etabollic <b>R</b>ate </p>
+    <p>BMR is the total number of calories that your body needs to perform basic, life-sustaining functions including the following basal functions of circulation, breathing, cell production, nutrient processing, protein synthesis, and ion transport.</p>
+    <p style="color: red">*BMR formula for males and females are different, therefore please select your actual gender in order to get your BMR correctly in return.</p>
+    <select name='Gender' id='gender'>
+        <option value="Female">Female</option> 
+        <option value="Male"> Male</option>
+    </select> <br>
+    <input id="h" type="text" placeholder="Height (centimetres)" > <br>
+    <input id="a" type="text" placeholder="Age (year)" > <br>
+    <input id="m" type="text" placeholder="Mass (kilograms)" > <br>
+    <h3 id='h3' style='display:none;'>Your BMR is: <span id='span'></span></h3>
+    <button onclick="calculate()" >Calculate</button> <br>
+    <h1>Bonus work hehe</h1>
+    <p>Given set of number: <span id='array'></span></p>
+    <p >Add a number to the end of the set:</p>
+    <input type="text" placeholder="" id='push' >
+    <button onclick='push()'>Add</button>
+    <script src='./bÀiÔnTậP.js' ></script>
+</body>
+</html>
